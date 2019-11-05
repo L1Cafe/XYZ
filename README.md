@@ -26,4 +26,8 @@ Design lexical, syntax, and semantic analysis. Intermediate code generation. Opt
 
 ## 4 - VM design
 
-VM architecture design.
+Virtual Machine architecture design.
+
+# License
+
+We love open source. All work regarding XYZ will be completely open source. From design to implementation, thesis paper included. The MIT License will be used to this end.
