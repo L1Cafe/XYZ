@@ -1,2 +1,2 @@
 # XYZ
-The XYZ language for education
+The XYZ language
