@@ -12,7 +12,7 @@ XYZ is a programming language in the form of a learning experiment to gain insig
 
 The project is divided in four stages.
 
-## 1 -State of the art [ Started 2019-nov-05 ]
+## 1 - State of the art [ Started 2019-nov-05 ]
 
 A look into already existing programming languages, their strengths and weaknesses and possible lessons learned for XYZ.
 
