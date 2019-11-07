@@ -140,3 +140,14 @@ Its syntax is whitespace based, so that code blocks must be indented adequately 
 ## Cons
 
 - There's no concept of `switch` statement, which means that, to achieve the same effect, it is necessary to use nested `if` and `elif` clauses
+
+# Lessons learned
+
+- Garbage collectors make the syntax much simpler, but adds a lot of complexity to the compiler
+- Garbage collection solves most issues where I/O or data storage is involved but they often add computational overhead to the runtime in terms of space and time
+- A clear, verbose syntax requires more lines of code for the same functionality in other languages, but simplifies the compiler and parser
+- The more high level the language is, the easier it becomes to handle data types, but adds complexity to the runtime parser
+- A well-designed programming language should prevent organic growth and instead follow a clear development path
+- There's no correlation between community size and how well designed a language is
+- A rapid development cycle leads to developers sticking to outdated versions, which might impact the security of applications running on a certain version once security patches are no longer delivered
+- High-level scripting languages that run in virtual machines are easier to port to other architectures, as you only need to reimplement the VM 
