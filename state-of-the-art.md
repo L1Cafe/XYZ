@@ -1,6 +1,20 @@
+> **JUF 2019-11-11** Comentarios generales
+>
+> En afirmaciones del tipo "El lenguaje más usado es ..." debes hacer referencia a algún estudio que soporte esa afirmación, por ejemplo: [estudio de stackoverflow](https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted). No es el único, seguro que hay más estudios, es cuestión de buscarlos.
+>
+>Echo en falta Pascal, C++; puedes usar el enlace anterior para ver si puedes meter algún otro lenguaje.
+>
+>Una de las características que debes estudiar en todos los lenguajes es su sencillez de palabras clave, construcciones sintácticas ...
+>
+>Vas a diseñar un lenguaje de programación nuevo, podrías utilizar un enfoque de usabilidad en este diseño a modo de guía. Algunos trabajos relacionados:
+> - [Usability of Programming Languages](https://pdfs.semanticscholar.org/0a51/bf2f9d0b374992c362615847b99a8f7db168.pdf)
+> - [Usability of Programming Languages: Special Interest Group (SIG) Meeting at CHI 2016](https://dl.acm.org/citation.cfm?id=2886434)
+
 # C
 
 General-purpose, weakly-typed, imperative, low-level programming language. It is one of the most used languages.
+
+> **JUF 2019-11-11** apoyar con datos y referencia a la fuente *one of the most used languages*
 
 It was designed with a strong focus on Unix, but is considered completely cross-platform nowadays, with compilers for macOS, Windows and even embedded devices or system drivers.
 
@@ -18,6 +32,9 @@ It features a very small number of keywords, low-level memory management through
 - Memory management is complex
 - Too much undefined behaviour
 - Syntax and coding style can vary wildly between different programmers
+
+
+> **JUF 2019-11-11** Especificar qué es para ti *undefined behaviour*
 
 # BASIC
 
@@ -142,7 +159,7 @@ Its syntax is whitespace based, so that code blocks must be indented adequately 
 - There's no concept of `switch` statement, which means that, to achieve the same effect, it is necessary to use nested `if` and `elif` clauses
 
 # Lessons learned
-
+> **JUF 2019-11-11** Si hay algo que no se justifica en lo que has comentado anteriormente, busca la fuente que afirma lo que comentas.
 - Garbage collectors make the syntax much simpler, but adds a lot of complexity to the compiler
 - Garbage collection solves most issues where I/O or data storage is involved but they often add computational overhead to the runtime in terms of space and time
 - A clear, verbose syntax requires more lines of code for the same functionality in other languages, but simplifies the compiler and parser
