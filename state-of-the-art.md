@@ -12,13 +12,13 @@
 
 # C
 
-General-purpose, weakly-typed, imperative, low-level programming language. It is one of the most used languages.
-
-> **JUF 2019-11-11** apoyar con datos y referencia a la fuente *one of the most used languages*
+General-purpose, weakly-typed, imperative, low-level programming language. It is one of the most used languages according to [GitHut](https://githut.info/), with the eighth position in the chart when sorted by "active repositories".
 
 It was designed with a strong focus on Unix, but is considered completely cross-platform nowadays, with compilers for macOS, Windows and even embedded devices or system drivers.
 
 It features a very small number of keywords, low-level memory management through pointers and allocation, and a strong and healthy developer community.
+
+C is also infamous for being a language with a lot of [*undefined behaviour*](https://en.wikipedia.org/wiki/Undefined_behavior). These situations arise when a programming language executes a certain computer code that is not well-defined by the language specification. A good example could be, for example, allocating portions of the system's memory and immediately trying to read them. Because it is not specified whether or not the compiler or the OS should erase the reserved memory, and the case is often that memory will not be cleared for performance reasons, this operation could end up reading memory leftovers from other applications. Writing code relying on undefined behaviour can introduce a plethora of issues ranging from readability and portability problems to even security vulnerabilities or application crashes and it is the sole responsibility of the programmer to never rely on undefined behaviour when writing code, because most simple compilers are unable to check for these issues.
 
 ## Pros
 
@@ -32,9 +32,6 @@ It features a very small number of keywords, low-level memory management through
 - Memory management is complex
 - Too much undefined behaviour
 - Syntax and coding style can vary wildly between different programmers
-
-
-> **JUF 2019-11-11** Especificar qué es para ti *undefined behaviour*
 
 # BASIC
 
