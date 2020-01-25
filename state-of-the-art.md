@@ -1,22 +1,10 @@
-> **JUF 2019-11-11** Comentarios generales
->
-> En afirmaciones del tipo "El lenguaje más usado es ..." debes hacer referencia a algún estudio que soporte esa afirmación, por ejemplo: [estudio de stackoverflow](https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted). No es el único, seguro que hay más estudios, es cuestión de buscarlos.
->
->Echo en falta Pascal, C++; puedes usar el enlace anterior para ver si puedes meter algún otro lenguaje.
->
->Una de las características que debes estudiar en todos los lenguajes es su sencillez de palabras clave, construcciones sintácticas ...
->
->Vas a diseñar un lenguaje de programación nuevo, podrías utilizar un enfoque de usabilidad en este diseño a modo de guía. Algunos trabajos relacionados:
-> - [Usability of Programming Languages](https://pdfs.semanticscholar.org/0a51/bf2f9d0b374992c362615847b99a8f7db168.pdf)
-> - [Usability of Programming Languages: Special Interest Group (SIG) Meeting at CHI 2016](https://dl.acm.org/citation.cfm?id=2886434)
-
 # C
 
 General-purpose, weakly-typed, imperative, low-level programming language. It is one of the most used languages according to [GitHut](https://githut.info/), with the eighth position in the chart when sorted by "active repositories".
 
 It was designed with a strong focus on Unix, but is considered completely cross-platform nowadays, with compilers for macOS, Windows and even embedded devices or system drivers.
 
-It features a very small number of keywords, low-level memory management through pointers and allocation, and a strong and healthy developer community.
+It features a **very small number of keywords**, low-level memory management through pointers and allocation, and a strong and healthy developer community.
 
 C is also infamous for being a language with a lot of [*undefined behaviour*](https://en.wikipedia.org/wiki/Undefined_behavior). These situations arise when a programming language executes a certain computer code that is not well-defined by the language specification. A good example could be, for example, allocating portions of the system's memory and immediately trying to read them. Because it is not specified whether or not the compiler or the OS should erase the reserved memory, and the case is often that memory will not be cleared for performance reasons, this operation could end up reading memory leftovers from other applications. Writing code relying on undefined behaviour can introduce a plethora of issues ranging from readability and portability problems to even security vulnerabilities or application crashes and it is the sole responsibility of the programmer to never rely on undefined behaviour when writing code, because most simple compilers are unable to check for these issues.
 
@@ -33,9 +21,28 @@ C is also infamous for being a language with a lot of [*undefined behaviour*](ht
 - Too much undefined behaviour
 - Syntax and coding style can vary wildly between different programmers
 
+# C++
+
+Created as an extension of the C programming language. It adds object-oriented programming to the already familiar functional features of C as well as retaining low-level memory access. It is designed with a strong focus on embedded devices, where efficiency is a requirement, but it has also been successfully applied in other contexts such as desktop applications and network-connected servers.
+
+It also adds anonymous functions (lambda functions) to the C standard. The C++ standards don't dictate implementation of name mangling or exception handling, but the disadvantage is that the object code produced by different compilers is typically incompatible.
+
+Most of the advantages and drawbacks of C still hold valid for C++. One of the most notable differences is that C++ is significantly more difficult to anaylse and parse due to the added complexity of objects and new reserved words.
+
+## Pros
+
+- Most C code can be made to compile with C++ compilers with little to no modification
+- It's as popular as C (or even more popular)
+- The Microsoft ecosystem has extensive documentation in regards to C++ applications for Windows
+- C++ is very popular for desktop apps in all major operating systems
+
+## Cons
+
+- It has received harsh criticism in regards to its design and complexity
+
 # BASIC
 
-Its design precedes C. Its goal was letting non-STEM students write their own programs for computers, which at the time required custom programming, such as the Atari or Commodore computers, but it became obsolete when other programming languages gained popularity, and modern computers with greater capabilities became available.
+Its design precedes C. Its goal was [letting non-STEM students write their own programs](https://en.wikipedia.org/wiki/BASIC) for computers, which at the time required custom programming, such as the Atari or Commodore computers, but it became obsolete when other programming languages gained popularity, and modern computers with greater capabilities became available.
 
 Despite being fundamentally focused on rudimentary 8 bit computers, it is high level enough to be much more understandable than other languages, even without prior experience in programming, because it used simple English keywords instead of complex assembly code or syntax symbols.
 
@@ -111,6 +118,23 @@ Nowadays, JavaScript is not a web-exclusive language, as, thanks to the work of 
 - Until very recently, JS grew organically, and is therefore not well designed from the beginning, but rather, became refined over time
 - Although it is cross-platform, the most used JS-based frameworks rely on the Chrome engine which is well-known for being taxing on system resources like memory and processor
 
+# Pascal
+
+Imperative programming language introduced in 1970 with the focus of getting programmers to acquire good programming practices such as [structured programming](https://en.wikipedia.org/wiki/Structured_programming) and [data structuring](https://en.wikipedia.org/wiki/Data_structure). It was based on the ideas of ALGOL 60. It became very successful upon its introduction, most notably on the minicomputer market, and began to be used in 1980s as a teaching language in many universities. C would eventually replace it.
+
+Pascal, being a small and relatively simple programming language doesn't have [many reserved words](https://wiki.freepascal.org/Reserved_words), making it easier to analyse syntactically.
+
+## Pros
+
+- Encourages good programming practices
+- It is small in size and efficient
+
+## Cons
+
+- Although Object Pascal exists, it is a separate project, as the original language does not include many newer programming paradigms
+- There are barely any companies or projects still using Pascal or any of its derivatives nowadays
+- Early criticism had the release of Extended Pascal as a consequence, but it didn't gain much traction
+
 # PHP
 
 It's mainly a server-side scripting programming language for the web.
@@ -156,7 +180,7 @@ Its syntax is whitespace based, so that code blocks must be indented adequately 
 - There's no concept of `switch` statement, which means that, to achieve the same effect, it is necessary to use nested `if` and `elif` clauses
 
 # Lessons learned
-> **JUF 2019-11-11** Si hay algo que no se justifica en lo que has comentado anteriormente, busca la fuente que afirma lo que comentas.
+
 - Garbage collectors make the syntax much simpler, but adds a lot of complexity to the compiler
 - Garbage collection solves most issues where I/O or data storage is involved but they often add computational overhead to the runtime in terms of space and time
 - A clear, verbose syntax requires more lines of code for the same functionality in other languages, but simplifies the compiler and parser
@@ -164,4 +188,4 @@ Its syntax is whitespace based, so that code blocks must be indented adequately 
 - A well-designed programming language should prevent organic growth and instead follow a clear development path
 - There's no correlation between community size and how well designed a language is
 - A rapid development cycle leads to developers sticking to outdated versions, which might impact the security of applications running on a certain version once security patches are no longer delivered
-- High-level scripting languages that run in virtual machines are easier to port to other architectures, as you only need to reimplement the VM 
+- High-level scripting languages that run in virtual machines are easier to port to other architectures, as you only need to reimplement the VM.
