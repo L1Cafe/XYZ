@@ -118,6 +118,24 @@ Nowadays, JavaScript is not a web-exclusive language, as, thanks to the work of 
 - Until very recently, JS grew organically, and is therefore not well designed from the beginning, but rather, became refined over time
 - Although it is cross-platform, the most used JS-based frameworks rely on the Chrome engine which is well-known for being taxing on system resources like memory and processor
 
+# Lisp
+
+Lisp isn't a language in itself, but a family of programming languages characterised by the usage of parenthesised prefix notation. It is the second oldest high-level programming language family (Fortran being older by one year). The most well-known dialects are: [Clojure](https://en.wikipedia.org/wiki/Clojure), [Common Lisp](https://en.wikipedia.org/wiki/Common_Lisp) and [Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language)). It was originally created as a practical mathematical notation for computer programs. Lisp algorithms can usually be expressed in both imperative and functional styles.
+
+The fundamental data structure of Lisp is the list, and Lisp offers macros that allow you to dynamically extend the langage beyond the designer's boundaries. Lisp is often considered a "programmable programming language", meaning the programmer is free to add features they deem desirable without much hassle.
+
+In particular, Clojure is the Lisp dialect which places the most emphasis on immutability and draws considerable influences from Haskell, making it the closest to a purely functional programming language.
+
+## Pros
+
+- Extremely flexible, allows the programmer to have full control on the software they write
+- It is very simple in design: Lisp code is simply a list of symbol
+
+## Cons
+
+- Lisp makes it difficult to easily identify language constructs
+- It's not very widespread, so documentation and help for obscure errors might be difficult to find
+
 # Pascal
 
 Imperative programming language introduced in 1970 with the focus of getting programmers to acquire good programming practices such as [structured programming](https://en.wikipedia.org/wiki/Structured_programming) and [data structuring](https://en.wikipedia.org/wiki/Data_structure). It was based on the ideas of ALGOL 60. It became very successful upon its introduction, most notably on the minicomputer market, and began to be used in 1980s as a teaching language in many universities. C would eventually replace it.
