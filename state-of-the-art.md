@@ -38,13 +38,13 @@ Most of the advantages and drawbacks of C still hold valid for C++. One of the m
 
 ## Cons
 
-- It has received harsh criticism in regards to its design and complexity
+- It has received [harsh criticism](https://wiki.theory.org/index.php/YourLanguageSucks#C.2B.2B_sucks_because) in regards to its design and complexity
 
 # BASIC
 
 Its design precedes C. Its goal was [letting non-STEM students write their own programs](https://en.wikipedia.org/wiki/BASIC) for computers, which at the time required custom programming, such as the Atari or Commodore computers, but it became obsolete when other programming languages gained popularity, and modern computers with greater capabilities became available.
 
-Despite being fundamentally focused on rudimentary 8 bit computers, it is high level enough to be much more understandable than other languages, even without prior experience in programming, because it used simple English keywords instead of complex assembly code or syntax symbols.
+Despite being fundamentally focused on rudimentary 8 bit computers, it is high level enough to be much more understandable than other languages, even without prior experience in programming, because it uses simple English keywords instead of complex assembly code or syntax symbols, which were the norm at its time of introduction.
 
 ## Pros
 
@@ -54,12 +54,14 @@ Despite being fundamentally focused on rudimentary 8 bit computers, it is high l
 ## Cons
 
 - Large list of reserved words
-- Generally, not powerful enough to write low-level software
+- Generally, not powerful enough to write low-level software easily
 - Non-structured, can lead to confusion if the programmer is not an expert and overuses GOTO clauses
 
 # Haskell
 
 A strongly-typed, purely functional programming language. It sports lazy evaluation and type polymorphism, among other features.
+
+It places a strong emphasis on [referential transparency](https://en.wikipedia.org/wiki/Referential_transparency), but is also lenient enough to allow the programmer to make concessions in aspects that break RT, like I/O.
 
 It is used by many tools and corporations such as Linspire, Pandoc, Xmonad, Facebook, GitHub, or seL4, a formally verified microkernel.
 
@@ -68,6 +70,7 @@ The most well-known Haskell implementation is the Glasgow Haskell Compiler, whic
 ## Pros
 
 - Great for handling functional problems
+- It is the declarative programming language par excellence
 
 ## Cons
 
@@ -98,6 +101,7 @@ Modern Java versions include advanced features such as Lambda Functions, and the
 - Its advanced features are a double-edged sword because, despite making it easier to handle modern programming concepts, it also introduces a steeper learning curve for newcomers
 - Its fast development and short release cycles implies there's a high fragmentation between the different Java versions, with the latest version being Java SE 13, but the oldest currently supported version at the time of writing dating back to Java SE 8, often being the lowest common denominator for Java software and even back to Java SE 6 for extended support.
 - It is overly verbose, which, althought might look like an advantage for readability, also means that writing code is much slower than in other languages with shorter built-in functions
+- Oracle is the owner of Java, and it imposes a restrictive license on Java code which has lead to [legal disputes](https://en.wikipedia.org/wiki/Google_v._Oracle_America) with Google in regards to Android, in stark contrast to its previous owner: Sun Microsystems which were usually seen as friendly towards open source projects
 
 # JavaScript
 
@@ -129,7 +133,7 @@ In particular, Clojure is the Lisp dialect which places the most emphasis on imm
 ## Pros
 
 - Extremely flexible, allows the programmer to have full control on the software they write
-- It is very simple in design: Lisp code is simply a list of symbol
+- It is very simple in design: Lisp code is simply a list of symbols
 
 ## Cons
 
@@ -192,18 +196,19 @@ Its syntax is whitespace based, so that code blocks must be indented adequately 
 ## Pros
 
 - The Garbage Collector frees the developer of having to manage the system memory
+- Python sports a fairly complete Object-Oriented paradigm including inheritance, polymorphism and other OOP features
 
 ## Cons
 
 - There's no concept of `switch` statement, which means that, to achieve the same effect, it is necessary to use nested `if` and `elif` clauses
+- The fast paced Python release cycle has caused that Python 2.x, that has been retired, is still in use by some companies
 
 # Lessons learned
 
-- Garbage collectors make the syntax much simpler, but adds a lot of complexity to the compiler
-- Garbage collection solves most issues where I/O or data storage is involved but they often add computational overhead to the runtime in terms of space and time
-- A clear, verbose syntax requires more lines of code for the same functionality in other languages, but simplifies the compiler and parser
-- The more high level the language is, the easier it becomes to handle data types, but adds complexity to the runtime parser
-- A well-designed programming language should prevent organic growth and instead follow a clear development path
-- There's no correlation between community size and how well designed a language is
-- A rapid development cycle leads to developers sticking to outdated versions, which might impact the security of applications running on a certain version once security patches are no longer delivered
-- High-level scripting languages that run in virtual machines are easier to port to other architectures, as you only need to reimplement the VM.
+- Garbage collectors free the programmer from the task of manually allocating and freeing memory, but come with performance drawbacks as applications will need a runtime.
+- Garbage collection solves most issues where I/O or data storage is involved but they often add computational overhead to the runtime in terms of space and time.
+- A clear, verbose syntax requires more lines of code for the same functionality in other languages, but simplifies the compiler and parser.
+- There's no correlation between community size and how well designed a language is.
+- A rapid development cycle typically leads to developers sticking to outdated versions, which may impact the security of applications running on a certain version once security patches are no longer delivered.
+- High-level scripting languages that run in virtual machines are easier to port to other architectures, as you only need to reimplement the VM, Python is a good example of this.
+- Declarative programming is closer to how humans reason, and imperative programming is closer to how machines work.
