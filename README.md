@@ -12,11 +12,11 @@ XYZ is a programming language in the form of a learning experiment to gain insig
 
 The project is divided in four stages.
 
-## 1 - [State of the art](state-of-the-art.md) [ Started 2019-nov-05 ]
+## 1 - [State of the art](1-state-of-the-art.md) [ Started 2019-nov-05 ]
 
 A look into already existing programming languages, their strengths and weaknesses and possible lessons learned for XYZ.
 
-## 2 - Formal language specification
+## 2 - [Formal language specification](2-formal-language-specification.md) [ Started 2019-feb-01 ]
 
 XYZ features, type system, flow control, functions, arguments, I/O, etc.
 
